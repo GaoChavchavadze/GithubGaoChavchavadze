@@ -1,0 +1,71 @@
+.videos{
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #363E97
+}
+.video-container{
+	display: block;
+}
+.videotxt{
+	font-family: 'Anton', sans-serif;
+	color: white;
+	padding: 30px
+}
+.videoparentbox {
+	display: flex;
+
+	justify-content: space-around;
+	font-family: 'Anton', sans-serif;
+}
+.videobox{
+	display: inline-block;
+	height: 150px;
+	width: 300px;
+	background-color: white;
+	/*margin-left: 50px;*/
+	text-align: center;
+	/*margin-right: auto;
+	margin-left: auto;*/
+	line-height: 150px;
+	/*order:<integer>;*/
+	padding-left: 20px;
+
+	
+}
+.videobox{
+	opacity: 1;
+	transition-property:all;
+	transition-delay: ease-in-out;
+	transition-duration: 1s;
+}
+.videobox:hover{
+	opacity: .1;
+	background-color:red;
+}
+.boxes { 
+	display:block;
+	text-align: center;
+	margin:auto;
+	padding: 10px
+	/*margin-left: 45%;
+	padding:15px;*/
+}
+.videomenu{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: solid; 
+	border-color: white;
+}
+.videomenu{
+	opacity: 1;
+	transition-property: all;
+	transition-delay: ease-in-out;
+	transition-duration: .5s
+
+	}
+.videomenu:hover{
+	opacity: 1;
+	background-color: white;
+}
