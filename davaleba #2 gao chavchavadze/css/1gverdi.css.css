@@ -1,0 +1,11 @@
+body {
+
+}
+ul {list-style: none}
+li{font-family: "bpg-arial.min.css"}
+a {text-decoration: none}
+.mtavari{color:red;}
+.banner {max-width:50%; max-height: 50%}
+.youtube{max-width: 3%}
+.facebook{max-width: 1.5%}
+.xazi {font-size: 50px;}

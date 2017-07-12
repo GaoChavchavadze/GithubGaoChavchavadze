@@ -1,0 +1,92 @@
+/*base clases*/
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	/*width: 1170px;*/
+}
+.clear:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.clear{
+	clear: both;
+	display: block;
+}
+/*base clases*/
+
+/*header*/
+.website-header{
+	height: 100px;
+
+}
+.header-height{
+	height: 100%;
+	line-height: 100px;
+	/*background-color: red;*/
+}
+.logo{
+	float: left;
+	width: 196px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.logo img{
+	display: block;
+}
+.navigation{
+	float: right;
+}
+.navigation ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.navigation ul li:last-child{
+	margin-right: 0;
+}
+
+/*.navigation ul li:after{
+	content: "";
+    width: 5px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.navigation ul li:before{
+	content: "";
+    width: 5px;
+    height: 20px;
+    background-color: yellow;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}*/
+/*.navigation ul li:first-child{
+	background-color:gray;
+}
+.navigation ul li:nth-child(2n + 1){
+	background-color:yellow;
+}*/
+.navigation ul li a{
+	color: #3D58A6;
+	font-size: 24px;
+}
+/*header*/
+
+/* slider */
+.slider{
+	background-color: #E6E6E6;
+	padding: 30px 0;
+	/*height: 520px;*/
+	/*padding-top: 30px;*/
+	box-sizing: border-box;
+}
+.slider img{
+	display: block;
+	width: 100%;
+} 
+/* slider */
