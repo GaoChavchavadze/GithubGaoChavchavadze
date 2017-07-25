@@ -1,0 +1,11 @@
+@media(max-width: 680px)
+{ nav {
+	display: none;
+}
+ .burger-menu {display: inline  /*flex*/}
+
+	.sliderimg{ width: 100%;}
+}
+@media (max-width: 1024px) {
+	.videoparentbox {justify-content: center;}
+}
