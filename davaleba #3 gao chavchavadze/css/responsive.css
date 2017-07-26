@@ -14,24 +14,35 @@
 @media(max-width: 680px)
 { 
 
-/*.menu{	
+.menu ul li:before {
+	content: "";
+	width: 0px;
+ }
+
+.menu{	
 	position: relative;
 	z-index: 20;
-	left: -200%;}
+	vertical-align: middle;
+}
 
 .menu ul {
 	display: flex;
 	flex-direction: column;
+	vertical-align: middle;
 	justify-content: center;
+	/*margin-top: 200px*/
+	margin-top: 50%;
 }
 .menu ul li {
 	display: flex;
 	justify-content: center;
-	margin-right: 0;
+	height: 50px;
+	text-align: center;
+	line-height: 50px
 }
 .menu ul li:nth-child(2n) {
 	background-color: green;
-} */
+} 
 .menu {
 	position: fixed;
 	width: 100%;
