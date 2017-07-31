@@ -1,18 +1,5 @@
+"use strict" 
 
-// var element = document.getElementById('burger');
-// var menu = document.getElementById('menu');
-// var active = document.getElementsByClassName ("active");
-
-// element.addEventListener('click', function(){
-// 	// console.log("clicked");
-// menu.classList.add('active') 
-// });
-
-// active.addEventListener("click", function() {
-// 	menu.classList.remove("active")
-// })
-
- 
 $(".burger").on("click", function(){
 	if ($(".header").hasClass("burger-is-active")) {
 		$(".header").removeClass("burger-is-active")
@@ -22,30 +9,27 @@ $(".burger").on("click", function(){
 	
 }) 
 
-// $(".burger").on("click", function(){
-// 	if ($(".header").hasClass("burger-is-active")) {
-// 		$(".header").removeClass("burger-is-active")
-// 		$('.filldiv').text($('.burger').text() + 
-// 		$('.menu').text())} 
-// 		else {
-// 			$(".header").addClass("burger-is-active")
-// 			$('.filldiv').everything($('.burger').all() - 
-// 		$('.menu').all())
 
-// 		}})
+// მენიუს სქროლი გვერდით
 
-// document.getElementById('#burger').appendChild(
-// document.getElementById('#menu')
-//  );
-	
+$(window).on("scroll", function(){
+	console.log("scrolled");
+if($(window).scrollTop() > 150){
+		 document.getElementById("headerparent").style.left = "0";
+	} 
+else{
 
+var lastScrollTop = 150;
 
-// $(".burger").on("click", function(){
-// 	if ($(".header").hasClass("burger-is-active")) {
-// 		$(".header").removeClass("burger-is-active")
+window.addEventListener("scroll", function (){   
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
 
-// 		// "#burger".appendChild("#menu")
-// 		$("#menu").append(".burger")  
-// 		} 
-
-// 		else {$(".header").addClass("burger-is-active") }})
+   if (st > lastScrollTop){
+       document.getElementById("headerparent").style.left = "-100%";
+   } else {
+      document.getElementById("headerparent").style.left = "0";
+   }
+   lastScrollTop = st;
+}, false);
+}
+})
